@@ -1,38 +1,107 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+  cursor: pointer;
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  font-family: cursive;
 }
 
-.App-link {
-  color: #61dafb;
+
+h1{
+  margin: 0px 0px 10px 0px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.input{
+  width: 50%;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  font-family: cursive;
+  font-size: larger;
+  cursor: pointer;
+  margin-bottom: 15px;
+  
+}
+.input-button{
+  width: 5%;
+  height: 40px;
+  margin-left: 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 1s all;
+}
+.input-button:hover{
+  width: 6%;
+  background-color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.label{
+  font-size: medium;
+  font-family: cursive;
+
 }
+.checkbox{
+  cursor: pointer;
+  margin: 0px 0px 0px 25px;
+}
+
+span input{
+  width: 30%;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 30px;
+  font-size: medium;
+  font-family: cursive;
+  margin-bottom: 5px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+li button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 1s all;
+  border-radius: 10px;
+}
+li button:hover{
+  padding: 5px 15px ;
+}
+
+
+li button.edit {
+  position: absolute;
+  right: 100px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+li button.delete {
+  position: absolute;
+  right: 160px; 
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+li button.save {
+  position: absolute;
+  right: 240px; 
+  background-color: #008CBA;
+  color: white;
+  border: none;
+}
+
